@@ -1,10 +1,6 @@
-from django.urls import path, include
-from rest_framework import routers
-from .views import ItemViewSet
-
-router = routers.DefaultRouter()
-router.register(r'items', ItemViewSet)
+from django.urls import path
+from . import views
 
 urlpatterns = [
-    path('', include(router.urls)),
+    path('register/', views.register, name='register'),
 ]
