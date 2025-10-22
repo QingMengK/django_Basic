@@ -11,3 +11,12 @@ python manage.py runserver
 cd .\fronted\
 npm run dev
 ```
+
+Start With Docker
+```shell
+#build
+docker compose build
+ 
+ #run
+docker compose up
+```
